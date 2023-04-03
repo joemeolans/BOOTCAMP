@@ -57,9 +57,12 @@ namespace CSharp{
             T GetAt(int idx);
             void Add(T item);
 
-            IEnumerable<T> Find(IPredicate<T> predicate);
+            IEnumerable<T> FindDelegate(PredicateDelegate<T> predicate);
+
+            IEnumerable<T> FindPredicate(IPredicate<T> predicate);
         }
 
+        public delegate bool PredicateDelegate<T>(T item);
         public class Lista<T> : ILista<T>, ILista{
         private readonly T[] _items;
         public int Count {get; private set;}
@@ -95,13 +98,24 @@ namespace CSharp{
             }
         }
 
-        public IEnumerable<T> Find(IPredicate<T> predicate){
+        public IEnumerable<T> FindPredicate(IPredicate<T> predicate){
             foreach(var current in _items){
                 if(current != null && predicate.Match(current)){
                     yield return current;
                 }
             }
         }
+
+        public IEnumerable<T> FindDelegate (PredicateDelegate<T> predicate){
+            foreach(var current in _items){
+                if(current != null && predicate(current)){
+                    yield return current;
+                }
+            }
+        }
+
+
+
     }
 
 }

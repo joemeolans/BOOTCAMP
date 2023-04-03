@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\C#.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\BOOTCAMP\\C#.csproj",
       "projectName": "C#",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\C#.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\BOOTCAMP\\C#.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\BOOTCAMP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
