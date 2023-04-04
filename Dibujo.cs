@@ -21,6 +21,8 @@ namespace CSharp{
             //var odds = listaInt.FindPredicate(new PredicateIntOdd());
             var odds = listaInt.FindDelegate(i => i%2==0);
             var biggerThanThree = listaInt.FindDelegate(i => i>3);
+
+            _figuras.GetFirst().Dibujar();
         }
 
         public void Dibujar(){
