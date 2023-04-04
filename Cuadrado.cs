@@ -1,6 +1,6 @@
 namespace CSharp{
     public class Cuadrado : Figura, IFigura{
-        public Cuadrado(int fila, int columna) : base(fila,columna){}
+        public Cuadrado(string name, int fila, int columna) : base(name, fila,columna){}
         public override void Dibujar(){}
 
     }

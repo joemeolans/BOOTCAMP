@@ -4,7 +4,7 @@ namespace CSharp{
     public class Texto : Figura, IFigura{
 
         private string _texto;
-        public Texto(int fila, int columna, string texto) : base (fila, columna){
+        public Texto(string name, int fila, int columna, string texto) : base (name, fila, columna){
             _texto = texto;
         }
         public override void Dibujar(){

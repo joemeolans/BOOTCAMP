@@ -70,7 +70,6 @@ namespace CSharp{
             _items = new T[limit];
             Count = 0;
         }
-
         public T GetAt(int idx){
             return _items[idx];
         }
