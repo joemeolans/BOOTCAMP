@@ -30,6 +30,16 @@ namespace CSharp{
                 return _figuras.FirstOrDefault(x => x.Name == name);
             }
         }
+        public IEnumerable<string> Names{
+            get{
+                return _figuras.Select(f => f.Name).OrderBy(n => n);
+            }
+        }
+        public IEnumerable<IFigura> Figuras{
+            get{
+                return _figuras;
+            }
+        }
         public T GetByName<T>(string name)
         where T : class, IFigura
         {
