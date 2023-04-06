@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xYoxWiW/VsfyaYHYnhL4NMhD0Lio7SeHxsbK81AESjoV+l2hPcSXR/8eFbtWd+UhA5OYe2eCtsj6fBGIy5vIIw==",
+  "dgSpecHash": "Wi+icf1++At0/uu3lyj9DdJpv0L8VAaxLutJT6l3xHcXVedsZDc1f7qgI0GpD93Tnq/yrwTEiw1r6RJosAJqKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\BOOTCAMP 2023\\C#\\BOOTCAMP\\C#.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -28,3 +28,5 @@ C:\Users\Usuario\Desktop\BOOTCAMP 2023\C#\BOOTCAMP\obj\Debug\net7.0\refint\C#.dl
 C:\Users\Usuario\Desktop\BOOTCAMP 2023\C#\BOOTCAMP\obj\Debug\net7.0\C#.pdb
 C:\Users\Usuario\Desktop\BOOTCAMP 2023\C#\BOOTCAMP\obj\Debug\net7.0\C#.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\BOOTCAMP 2023\C#\BOOTCAMP\obj\Debug\net7.0\ref\C#.dll
+C:\Users\Usuario\Desktop\BOOTCAMP 2023\C#\BOOTCAMP\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\BOOTCAMP 2023\C#\BOOTCAMP\obj\Debug\net7.0\C#.csproj.CopyComplete

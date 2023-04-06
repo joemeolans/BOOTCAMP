@@ -24,6 +24,7 @@ namespace CSharp
                 var s = dibujo.Names;
                 var s2 = dibujo.Figuras;
                 var f = dibujo.GetByName<Texto>("Texto 0");
+                dibujo.Save("");
                 dibujo.Dibujar();
                 Console.Read();
                 return true;

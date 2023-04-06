@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 namespace CSharp{
     
     public class Dibujo {
@@ -62,6 +63,10 @@ namespace CSharp{
                 figura.Dibujar();
             }
             */
+        }
+
+        public void Save(string path){
+            var json = JsonConvert.SerializeObject(_figuras);
         }
     }
 }
