@@ -66,7 +66,18 @@ namespace CSharp{
         }
 
         public void Save(string path){
-            var json = JsonConvert.SerializeObject(_figuras);
+            var cuadrados = _figuras.OfType<Cuadrado>();
+            var textos = _figuras.OfType<Texto>();
+
+            var resultado = new {
+                Cuadrados = cuadrados,
+                textos = textos,
+                Count = _figuras.Count
+            };
+
+            var json = JsonConvert.SerializeObject(resultado);
+            File.WriteAllText(path, json);
+
         }
     }
 }
