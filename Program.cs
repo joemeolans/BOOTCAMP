@@ -22,10 +22,12 @@ namespace CSharp
                 var dibujo = new Dibujo();
                 dibujo.AddFigura(FiguraFactory.Instance.GetTexto("Hola", 10, 10));
                 dibujo.AddFigura(FiguraFactory.Instance.GetCuadrado(1, 3));
+                var f = dibujo.Figuras.First();
+                Evaluar(f);
                 var (name, tipo) = dibujo.GetFiguraInfo().First();
                 var s = dibujo.Names;
                 var s2 = dibujo.Figuras;
-                var f = dibujo.GetByName<Texto>("Texto 0");
+                //var f = dibujo.GetByName<Texto>("Texto 0");
                 dibujo.Save("drawing.json");
                 dibujo.Dibujar();
                 Console.Read();
@@ -37,6 +39,24 @@ namespace CSharp
             else{
                 Console.WriteLine("Seleccione 1 o 2");
                 return false;
+            }
+        }
+        private static void Evaluar(IFigura figura){
+            /* primera opcion
+            if(figura is Texto texto){
+                Console.WriteLine("Es un texto con mensaje: " + texto.Text);
+            }
+            */
+            switch(figura){
+                case Texto t:
+                    Console.WriteLine("Es un texto con mensaje: " + t.Text);
+                    break;
+                case Cuadrado c when c.Lado == 0:
+                    Console.WriteLine("Es un cuadrado ridiculamente pequeño");
+                    break;
+                case null:
+                    Console.WriteLine("No hay figura");
+                    break;
             }
         }
     }

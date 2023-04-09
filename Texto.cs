@@ -3,13 +3,13 @@ namespace CSharp{
 
     public class Texto : Figura, IFigura{
 
-        private string _texto;
+        public string Text{get;}
         public Texto(string name, int fila, int columna, string texto) : base (name, fila, columna){
-            _texto = texto;
+            Text = texto;
         }
         public override void Dibujar(){
             Console.SetCursorPosition(Pos.Columna, Pos.Fila);
-            Console.Write(_texto);
+            Console.Write(Text);
         }
     }
 }
