@@ -41,6 +41,11 @@ namespace CSharp{
                 return _figuras;
             }
         }
+        public IEnumerable<(string name, Type tipo)> GetFiguraInfo(){
+                foreach(var figura in _figuras){
+                    yield return(figura.Name, figura.GetType());
+                }
+        }
         public T GetByName<T>(string name)
         where T : class, IFigura
         {

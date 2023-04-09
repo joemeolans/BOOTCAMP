@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Linq;
 namespace CSharp
 {
 
@@ -21,6 +22,7 @@ namespace CSharp
                 var dibujo = new Dibujo();
                 dibujo.AddFigura(FiguraFactory.Instance.GetTexto("Hola", 10, 10));
                 dibujo.AddFigura(FiguraFactory.Instance.GetCuadrado(1, 3));
+                var (name, tipo) = dibujo.GetFiguraInfo().First();
                 var s = dibujo.Names;
                 var s2 = dibujo.Figuras;
                 var f = dibujo.GetByName<Texto>("Texto 0");
